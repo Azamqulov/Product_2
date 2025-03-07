@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Cucina Creativa</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/209/209116.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;800&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .policy-content {
+            padding: 150px 0 80px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-color);
+        }
+        
+        .policy-header {
+            text-align: center;
+            margin-bottom: 60px;
+            perspective: 1000px;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .policy-header:hover {
+            transform: translateY(-5px);
+        }
+        
+        .policy-subtitle {
+            position: relative;
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--accent-color), #ff9d9d, var(--accent-color));
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradient 3s linear infinite;
+            padding: 0 10px;
+            margin-bottom: 15px;
+        }
+        
+        .policy-title {
+            position: relative;
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: 0 0 5px rgba(255, 107, 107, 0.1),
+                         0 0 10px rgba(255, 107, 107, 0.1);
+            transition: all 0.5s ease;
+            margin-bottom: 30px;
+        }
+        
+        .policy-header:hover .policy-title {
+            text-shadow: 0 0 10px rgba(255, 107, 107, 0.3),
+                         0 0 20px rgba(255, 107, 107, 0.2),
+                         0 0 30px rgba(255, 107, 107, 0.1);
+            letter-spacing: 3px;
+        }
+        
+        .policy-content h2 {
+            color: var(--accent-color);
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .policy-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        .policy-content h2:hover::after {
+            width: 100%;
+        }
+        
+        .policy-content h3 {
+            color: var(--text-color);
+            margin: 30px 0 15px;
+            font-size: 1.4rem;
+        }
+        
+        .policy-content h4 {
+            color: var(--accent-color);
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .policy-content p, .policy-content ul {
+            margin-bottom: 15px;
+            color: var(--text-color-muted);
+            line-height: 1.7;
+        }
+        
+        .policy-content ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        
+        .policy-content ul li {
+            margin-bottom: 10px;
+        }
+        
+        .policy-content a {
+            color: var(--accent-color);
+            transition: var(--transition);
+        }
+        
+        .policy-content a:hover {
+            color: var(--accent-color-hover);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 50px;
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 12px 30px;
+            border: 1px solid var(--accent-color);
+            border-radius: 30px;
+            transition: var(--transition);
+        }
+        
+        .back-link i {
+            margin-right: 10px;
+        }
+        
+        .back-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .sparkle {
+            position: absolute;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10;
+            animation: sparkle-fade linear forwards;
+        }
+        
+        @keyframes sparkle-fade {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-text">Cucina<span class="accent">Creativa</span></span>
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <div class="toggle-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Screen Menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <ul class="menu-links">
+                <li><a href="index.html#home" class="menu-link" data-text="Home">Home</a></li>
+                <li><a href="index.html#about" class="menu-link" data-text="Chi Siamo">Chi Siamo</a></li>
+                <li><a href="index.html#menu" class="menu-link" data-text="Menu">Menu</a></li>
+                <li><a href="index.html#gallery" class="menu-link" data-text="Galleria">Galleria</a></li>
+                <li><a href="index.html#contact" class="menu-link" data-text="Contatti">Contatti</a></li>
+            </ul>
+            <div class="menu-info">
+                <div class="menu-address">
+                    <h3>Vieni a trovarci</h3>
+                    <p>Via Dante Alighieri 42</p>
+                    <p>50122 Firenze, Italia</p>
+                </div>
+                <div class="menu-hours">
+                    <h3>Orari</h3>
+                    <p>Martedì - Domenica</p>
+                    <p>12:00 - 15:00 | 19:00 - 23:30</p>
+                </div>
+                <div class="menu-contact">
+                    <h3>Prenota</h3>
+                    <p><a href="tel:+39 055 987 6543">+39 055 987 6543</a></p>
+                    <p><a href="mailto:info@cucinacreativa.it">info@cucinacreativa.it</a></p>
+                </div>
+                <div class="menu-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Content -->
+    <div class="container policy-content">
+        <div class="policy-header" id="policyHeader">
+            <span class="policy-subtitle">Informativa</span>
+            <h1 class="policy-title">Privacy Policy</h1>
+        </div>
+        
+        <p>Ultimo aggiornamento: 1 Marzo 2023</p>
+        
+        <p>La presente Privacy Policy descrive le nostre politiche e procedure sulla raccolta, l'uso e la divulgazione delle tue informazioni quando utilizzi il nostro servizio e ti informa sui tuoi diritti alla privacy e su come la legge ti protegge.</p>
+        
+        <h2>Raccolta e Utilizzo dei Dati Personali</h2>
+        
+        <h3>Tipi di Dati Raccolti</h3>
+        
+        <h4>Dati Personali</h4>
+        <p>Durante l'utilizzo del nostro servizio, potremmo chiederti di fornirci alcune informazioni di identificazione personale che possono essere utilizzate per contattarti o identificarti. Le informazioni di identificazione personale possono includere, ma non sono limitate a:</p>
+        <ul>
+            <li>Indirizzo email</li>
+            <li>Nome e cognome</li>
+            <li>Numero di telefono</li>
+            <li>Indirizzo, Stato, Provincia, CAP, Città</li>
+            <li>Dati di utilizzo</li>
+        </ul>
+        
+        <h4>Dati di Utilizzo</h4>
+        <p>I Dati di Utilizzo vengono raccolti automaticamente durante l'uso del Servizio.</p>
+        <p>I Dati di Utilizzo possono includere informazioni come l'indirizzo IP del tuo dispositivo, il tipo e la versione del browser, le pagine del nostro Servizio che visiti, l'ora e la data della tua visita, il tempo trascorso su tali pagine, identificatori unici del dispositivo e altri dati diagnostici.</p>
+        
+        <h2>Utilizzo dei tuoi Dati Personali</h2>
+        <p>Cucina Creativa può utilizzare i Dati Personali per le seguenti finalità:</p>
+        <ul>
+            <li>Per fornire e mantenere il nostro Servizio, incluso il monitoraggio dell'utilizzo del nostro Servizio.</li>
+            <li>Per gestire il tuo Account: per gestire la tua registrazione come utente del Servizio.</li>
+            <li>Per l'esecuzione di un contratto: lo sviluppo, la conformità e l'intraprendere un contratto di acquisto per i prodotti, articoli o servizi che hai acquistato o di qualsiasi altro contratto con noi attraverso il Servizio.</li>
+            <li>Per contattarti: per contattarti tramite email, telefonate, SMS, o altre forme equivalenti di comunicazione elettronica, come le notifiche push di un'applicazione mobile riguardanti aggiornamenti o comunicazioni informative relative alle funzionalità, prodotti o servizi contrattati, inclusi gli aggiornamenti di sicurezza, quando necessario o ragionevole per la loro implementazione.</li>
+            <li>Per fornirti notizie, offerte speciali e informazioni generali su altri beni, servizi ed eventi che offriamo che sono simili a quelli che hai già acquistato o chiesto, a meno che tu non abbia scelto di non ricevere tali informazioni.</li>
+            <li>Per gestire le tue richieste: per partecipare e gestire le tue richieste a noi.</li>
+        </ul>
+        
+        <h2>Conservazione dei tuoi Dati Personali</h2>
+        <p>La Società conserverà i tuoi Dati Personali solo per il tempo necessario agli scopi indicati nella presente Informativa sulla Privacy. Conserveremo e utilizzeremo i tuoi Dati Personali nella misura necessaria per adempiere ai nostri obblighi legali (ad esempio, se siamo tenuti a conservare i tuoi dati per conformarci alle leggi applicabili), risolvere controversie e applicare i nostri accordi e politiche legali.</p>
+        
+        <h2>Trasferimento dei tuoi Dati Personali</h2>
+        <p>Le tue informazioni, compresi i Dati Personali, sono trattate presso le sedi operative della Società e in qualsiasi altro luogo in cui si trovano le parti coinvolte nel trattamento. Ciò significa che queste informazioni possono essere trasferite e mantenute su computer situati al di fuori del tuo stato, provincia, paese o altra giurisdizione governativa in cui le leggi sulla protezione dei dati possono differire da quelle della tua giurisdizione.</p>
+        
+        <h2>Divulgazione dei tuoi Dati Personali</h2>
+        
+        <h3>Transazioni Commerciali</h3>
+        <p>Se la Società è coinvolta in una fusione, acquisizione o vendita di asset, i tuoi Dati Personali potrebbero essere trasferiti. Ti avviseremo prima che i tuoi Dati Personali vengano trasferiti e diventino soggetti a una diversa Informativa sulla Privacy.</p>
+        
+        <h3>Applicazione della legge</h3>
+        <p>In determinate circostanze, la Società potrebbe essere tenuta a divulgare i tuoi Dati Personali se richiesto dalla legge o in risposta a richieste valide da parte delle autorità pubbliche (ad esempio un tribunale o un'agenzia governativa).</p>
+        
+        <h3>Altri requisiti legali</h3>
+        <p>La Società può divulgare i tuoi Dati Personali in buona fede credendo che tale azione sia necessaria per:</p>
+        <ul>
+            <li>Rispettare un obbligo legale</li>
+            <li>Proteggere e difendere i diritti o la proprietà della Società</li>
+            <li>Prevenire o investigare possibili illeciti in relazione al Servizio</li>
+            <li>Proteggere la sicurezza personale degli Utenti del Servizio o del pubblico</li>
+            <li>Proteggere contro la responsabilità legale</li>
+        </ul>
+        
+        <h2>Sicurezza dei tuoi Dati Personali</h2>
+        <p>La sicurezza dei tuoi Dati Personali è importante per noi, ma ricorda che nessun metodo di trasmissione su Internet o metodo di archiviazione elettronica è sicuro al 100%. Mentre ci sforziamo di utilizzare mezzi commercialmente accettabili per proteggere i tuoi Dati Personali, non possiamo garantirne la sicurezza assoluta.</p>
+        
+        <h2>I Diritti della Privacy dei Minori</h2>
+        <p>Il nostro Servizio non si rivolge a persone di età inferiore ai 18 anni. Non raccogliamo consapevolmente informazioni di identificazione personale da persone di età inferiore ai 18 anni. Se sei un genitore o tutore e sei consapevole che tuo figlio ci ha fornito Dati Personali, ti preghiamo di contattarci. Se veniamo a conoscenza di aver raccolto Dati Personali da minori senza la verifica del consenso dei genitori, adottiamo misure per rimuovere tali informazioni dai nostri server.</p>
+        
+        <h2>Modifiche alla presente Informativa sulla Privacy</h2>
+        <p>Potremmo aggiornare la nostra Informativa sulla Privacy di tanto in tanto. Ti informeremo di eventuali modifiche pubblicando la nuova Informativa sulla Privacy in questa pagina.</p>
+        <p>Ti informeremo via email e/o un avviso evidente sul nostro Servizio, prima che la modifica diventi effettiva e aggiorneremo la data di "Ultimo aggiornamento" nella parte superiore di questa Informativa sulla Privacy.</p>
+        <p>Ti consigliamo di rivedere periodicamente questa Informativa sulla Privacy per eventuali modifiche. Le modifiche a questa Informativa sulla Privacy sono efficaci quando vengono pubblicate su questa pagina.</p>
+        
+        <h2>Contattaci</h2>
+        <p>Se hai domande su questa Informativa sulla Privacy, puoi contattarci:</p>
+        <ul>
+            <li>Via email: privacy@cucinacreativa.it</li>
+            <li>Visitando questa pagina sul nostro sito web: www.cucinacreativa.it/contatti</li>
+            <li>Per telefono: +39 055 987 6543</li>
+            <li>Per posta: Via Dante Alighieri 42, 50122 Firenze, Italia</li>
+        </ul>
+        
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Torna alla Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Cucina<span class="accent">Creativa</span></span>
+                    <p>Tradizione Italiana con un Tocco Moderno</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">Chi Siamo</a></li>
+                        <li><a href="index.html#menu">Menu</a></li>
+                        <li><a href="index.html#gallery">Galleria</a></li>
+                        <li><a href="index.html#contact">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Via Dante Alighieri 42, 50122 Firenze, Italia</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+39 055 987 6543">+39 055 987 6543</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@cucinacreativa.it">info@cucinacreativa.it</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Seguici</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form id="newsletterForm">
+                            <div class="newsletter-form">
+                                <input type="email" placeholder="La tua email" required>
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Cucina Creativa. Tutti i diritti riservati.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                    <a href="terms.html">Termini e Condizioni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Special animation for privacy policy header
+        document.addEventListener('DOMContentLoaded', function() {
+            const policyHeader = document.getElementById('policyHeader');
+            
+            if (policyHeader) {
+                // Create letter animation for the title
+                const title = policyHeader.querySelector('.policy-title');
+                
+                if (title && title.textContent) {
+                    // Split text into letters for animation
+                    const letters = title.textContent.split('');
+                    title.textContent = '';
+                    
+                    letters.forEach((letter, index) => {
+                        const span = document.createElement('span');
+                        span.textContent = letter;
+                        span.style.display = 'inline-block';
+                        span.style.transition = 'transform 0.3s ease';
+                        span.style.transitionDelay = `${index * 0.03}s`;
+                        title.appendChild(span);
+                    });
+                    
+                    // Add hover effect
+                    title.addEventListener('mouseover', () => {
+                        Array.from(title.children).forEach((span, index) => {
+                            span.style.transform = `translateY(${Math.sin(index) * 10}px)`;
+                            span.style.color = index % 2 === 0 ? 'var(--accent-color)' : 'var(--text-color)';
+                        });
+                    });
+                    
+                    title.addEventListener('mouseout', () => {
+                        Array.from(title.children).forEach(span => {
+                            span.style.transform = 'translateY(0)';
+                            span.style.color = 'var(--text-color)';
+                        });
+                    });
+                }
+                
+                // Add sparkle effect on hover
+                policyHeader.addEventListener('mouseover', createSparkles);
+                
+                function createSparkles() {
+                    for (let i = 0; i < 10; i++) {
+                        const sparkle = document.createElement('div');
+                        sparkle.className = 'sparkle';
+                        
+                        // Random position around the header
+                        const posX = Math.random() * 300 - 150;
+                        const posY = Math.random() * 100 - 50;
+                        
+                        sparkle.style.left = `calc(50% + ${posX}px)`;
+                        sparkle.style.top = `calc(50% + ${posY}px)`;
+                        
+                        // Random size
+                        const size = Math.random() * 8 + 2;
+                        sparkle.style.width = `${size}px`;
+                        sparkle.style.height = `${size}px`;
+                        
+                        // Random animation duration
+                        const duration = Math.random() * 1 + 0.5;
+                        sparkle.style.animationDuration = `${duration}s`;
+                        
+                        policyHeader.appendChild(sparkle);
+                        
+                        // Remove sparkle after animation
+                        setTimeout(() => {
+                            sparkle.remove();
+                        }, duration * 1000);
+                    }
+                }
+            }
+            
+            // Animate section headings
+            const sectionHeadings = document.querySelectorAll('.policy-content h2');
+            sectionHeadings.forEach(heading => {
+                heading.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(10px)';
+                    this.style.color = 'var(--accent-color-hover)';
+                });
+                
+                heading.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                    this.style.color = 'var(--accent-color)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

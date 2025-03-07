@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucina Creativa | Ristorante Italiano Moderno</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/209/209116.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;800&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="fork-knife">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <path class="fork" d="M30,20 L30,60 M20,20 L20,40 M40,20 L40,40 M30,60 L30,80" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+                    <path class="knife" d="M70,20 C85,30 85,40 70,50 L70,80" stroke="#ff6b6b" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <div class="loading-text">Preparando il menu...</div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Utilizziamo i cookie</h3>
+                <p>Questo sito utilizza cookie per migliorare l'esperienza utente. Continuando a navigare accetti la nostra <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="btn-outline" id="declineCookies">Rifiuta</button>
+                <button class="btn-accent" id="acceptCookies">Accetta</button>
+            </div>
+            <button class="cookie-close" id="closeCookies"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <a href="#" class="logo-link">
+                <span class="logo-text">Cucina<span class="accent">Creativa</span></span>
+            </a>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <div class="toggle-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Screen Menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <div class="menu-bg"></div>
+        <div class="menu-content">
+            <ul class="menu-links">
+                <li><a href="#home" class="menu-link" data-text="Home">Home</a></li>
+                <li><a href="#about" class="menu-link" data-text="Chi Siamo">Chi Siamo</a></li>
+                <li><a href="#menu" class="menu-link" data-text="Menu">Menu</a></li>
+                <li><a href="#gallery" class="menu-link" data-text="Galleria">Galleria</a></li>
+                <li><a href="#contact" class="menu-link" data-text="Contatti">Contatti</a></li>
+            </ul>
+            <div class="menu-info">
+                <div class="menu-address">
+                    <h3>Vieni a trovarci</h3>
+                    <p>Via Dante Alighieri 42</p>
+                    <p>50122 Firenze, Italia</p>
+                </div>
+                <div class="menu-hours">
+                    <h3>Orari</h3>
+                    <p>Martedì - Domenica</p>
+                    <p>12:00 - 15:00 | 19:00 - 23:30</p>
+                </div>
+                <div class="menu-contact">
+                    <h3>Prenota</h3>
+                    <p><a href="tel:+39 055 987 6543">+39 055 987 6543</a></p>
+                    <p><a href="mailto:info@cucinacreativa.it">info@cucinacreativa.it</a></p>
+                </div>
+                <div class="menu-social">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-bg-img"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Cucina</span>
+                <span class="title-line">Creativa</span>
+            </h1>
+            <div class="hero-subtitle">Tradizione Italiana con un Tocco Moderno</div>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Esplora il Menu</a>
+                <a href="#reservation" class="btn-secondary">Prenota un Tavolo</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scorri</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="section-header">
+                <span class="section-subtitle">La Nostra Storia</span>
+                <h2 class="section-title">Chi Siamo</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight-text">Dal 1985, Cucina Creativa ridefinisce la tradizione culinaria italiana con un approccio innovativo e artistico.</p>
+                    <p>Fondato dalla famiglia Ricci, il nostro ristorante combina tecniche classiche con presentazioni moderne, creando un'esperienza gastronomica unica nel cuore di Firenze.</p>
+                    <p>Il nostro chef, Alessandro Ricci, seleziona personalmente ingredienti freschi dai migliori produttori locali, garantendo sapori autentici e di alta qualità in ogni piatto.</p>
+                    <div class="about-signature">
+                        <img src="https://i.ibb.co/Jy0Xz8Z/signature.png" alt="Firma dello chef" class="signature-img">
+                        <div class="signature-name">Alessandro Ricci</div>
+                        <div class="signature-title">Chef & Proprietario</div>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <div class="about-image about-image-1" data-speed="0.1"></div>
+                    <div class="about-image about-image-2" data-speed="-0.1"></div>
+                    <div class="about-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <div class="specialties-container">
+            <div class="section-header">
+                <span class="section-subtitle">I Nostri Piatti</span>
+                <h2 class="section-title">Specialità</h2>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="specialty-title">Ingredienti Freschi</h3>
+                    <p class="specialty-desc">Utilizziamo solo ingredienti freschi e di stagione, selezionati dai migliori produttori locali.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="specialty-title">Cucina Creativa</h3>
+                    <p class="specialty-desc">Reinterpretiamo i piatti tradizionali italiani con tecniche moderne e presentazioni artistiche.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3 class="specialty-title">Vini Pregiati</h3>
+                    <p class="specialty-desc">La nostra cantina offre una selezione curata di vini italiani, dai classici alle etichette boutique.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3 class="specialty-title">Pasta Fresca</h3>
+                    <p class="specialty-desc">Ogni giorno prepariamo pasta fresca a mano, seguendo ricette tradizionali tramandate da generazioni.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <!-- <section id="menu" class="menu-section">
+        <div class="menu-container">
+            <div class="section-header">
+                <span class="section-subtitle">Gusto Italiano</span>
+                <h2 class="section-title">Il Nostro Menu</h2>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="antipasti">Antipasti</button>
+                <button class="menu-tab" data-category="primi">Primi</button>
+                <button class="menu-tab" data-category="secondi">Secondi</button>
+                <button class="menu-tab" data-category="dolci">Dolci</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="antipasti">
+                    <div class="menu-items">
+                        <div class="menu-item" data-aos="fade-up">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Carpaccio di Manzo</h3>
+                                    <p class="menu-item-desc">Sottili fette di manzo crudo con rucola, parmigiano e tartufo nero</p>
+                                </div>
+                                <div class="menu-item-price">€16</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1648146299011-2d924ad4c67b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Burrata con Pomodorini</h3>
+                                    <p class="menu-item-desc">Burrata cremosa con pomodorini confit, basilico e riduzione di balsamico</p>
+                                </div>
+                                <div class="menu-item-price">€14</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1595587870672-c79b47875c6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Polpo alla Griglia</h3>
+                                    <p class="menu-item-desc">Tentacoli di polpo grigliati con crema di patate, olive taggiasche e polvere di capperi</p>
+                                </div>
+                                <div class="menu-item-price">€18</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1599084993091-1cb5c9b3b9b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="primi">
+                    <div class="menu-items">
+                        <div class="menu-item" data-aos="fade-up">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Ravioli al Tartufo</h3>
+                                    <p class="menu-item-desc">Ravioli ripieni di ricotta e spinaci con salsa al tartufo e parmigiano stagionato</p>
+                                </div>
+                                <div class="menu-item-price">€22</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Risotto ai Funghi Porcini</h3>
+                                    <p class="menu-item-desc">Risotto cremoso con funghi porcini, timo fresco e scaglie di parmigiano</p>
+                                </div>
+                                <div class="menu-item-price">€20</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Spaghetti alle Vongole</h3>
+                                    <p class="menu-item-desc">Spaghetti con vongole veraci, aglio, peperoncino e prezzemolo fresco</p>
+                                </div>
+                                <div class="menu-item-price">€18</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="secondi">
+                    <div class="menu-items">
+                        <div class="menu-item" data-aos="fade-up">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Filetto di Manzo</h3>
+                                    <p class="menu-item-desc">Filetto di manzo con riduzione al Chianti, purè di patate al tartufo e verdure di stagione</p>
+                                </div>
+                                <div class="menu-item-price">€28</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Branzino al Forno</h3>
+                                    <p class="menu-item-desc">Branzino intero al forno con erbe aromatiche, limone e verdure grigliate</p>
+                                </div>
+                                <div class="menu-item-price">€26</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Ossobuco alla Milanese</h3>
+                                    <p class="menu-item-desc">Ossobuco di vitello brasato con risotto allo zafferano e gremolata</p>
+                                </div>
+                                <div class="menu-item-price">€24</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="dolci">
+                    <div class="menu-items">
+                        <div class="menu-item" data-aos="fade-up">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Tiramisù Moderno</h3>
+                                    <p class="menu-item-desc">Reinterpretazione del classico tiramisù con sfera di mascarpone e polvere di caffè</p>
+                                </div>
+                                <div class="menu-item-price">€10</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Panna Cotta</h3>
+                                    <p class="menu-item-desc">Panna cotta alla vaniglia con coulis di frutti di bosco e crumble di pistacchio</p>
+                                </div>
+                                <div class="menu-item-price">€9</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="menu-item-front">
+                                <div class="menu-item-info">
+                                    <h3 class="menu-item-title">Cannoli Siciliani</h3>
+                                    <p class="menu-item-desc">Cannoli ripieni di ricotta dolce, scaglie di cioccolato e pistacchi di Bronte</p>
+                                </div>
+                                <div class="menu-item-price">€8</div>
+                            </div>
+                            <div class="menu-item-back">
+                                <div class="menu-item-image" style="background-image: url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="#" class="btn-primary">Menu Completo <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-container">
+            <div class="section-header">
+                <span class="section-subtitle">I Nostri Piatti</span>
+                <h2 class="section-title">Galleria</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-1">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Il Nostro Ristorante</h3>
+                                <p>Atmosfera elegante e accogliente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-2">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Risotto ai Funghi</h3>
+                                <p>Il nostro piatto più richiesto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-3">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>La Nostra Cantina</h3>
+                                <p>Selezione di vini pregiati</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-4">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Dolci Artigianali</h3>
+                                <p>Creazioni del nostro pasticcere</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-5">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1498579150354-977475b7ea0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Pasta Fresca</h3>
+                                <p>Preparata ogni giorno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-6">
+                    <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Eventi Privati</h3>
+                                <p>Spazi eleganti per occasioni speciali</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <span class="section-subtitle">Cosa Dicono di Noi</span>
+                <h2 class="section-title">Recensioni</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonials-track">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Un'esperienza culinaria straordinaria! I piatti sono opere d'arte, sia visivamente che nel gusto. Il risotto ai funghi porcini è il migliore che abbia mai assaggiato.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/65.jpg')"></div>
+                                <div class="author-info">
+                                    <h4>Maria Bianchi</h4>
+                                    <div class="author-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">Ho festeggiato il mio anniversario qui e non potevo scegliere posto migliore. L'atmosfera è magica, il servizio impeccabile e il cibo semplicemente divino. Un'esperienza indimenticabile!</p>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                                <div class="author-info">
+                                    <h4>Marco Rossi</h4>
+                                    <div class="author-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">La fusione tra tradizione e innovazione è perfettamente bilanciata. I sapori sono autentici ma presentati in modo creativo. Il tiramisù moderno è una rivelazione! Torneremo sicuramente.</p>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/42.jpg')"></div>
+                                <div class="author-info">
+                                    <h4>Giulia Verdi</h4>
+                                    <div class="author-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <button class="testimonial-arrow prev" id="prevTestimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonialDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-arrow next" id="nextTestimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="reservation-container">
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <div class="section-header left-align">
+                        <span class="section-subtitle">Prenota un Tavolo</span>
+                        <h2 class="section-title">Vieni a Trovarci</h2>
+                    </div>
+                    <p class="reservation-text">Prenota il tuo tavolo per un'esperienza culinaria indimenticabile. Per gruppi numerosi o eventi privati, contattaci direttamente.</p>
+                    <div class="reservation-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Indirizzo</h3>
+                                <p>Via Dante Alighieri 42, 50122 Firenze, Italia</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Telefono</h3>
+                                <p><a href="tel:+39 055 987 6543">+39 055 987 6543</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@cucinacreativa.it">info@cucinacreativa.it</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="detail-text">
+                                <h3>Orari</h3>
+                                <p>Martedì - Domenica: 12:00 - 15:00, 19:00 - 23:30</p>
+                                <p>Lunedì: Chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form-container">
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome e Cognome</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Telefono</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" name="date" required>
+                                <label for="date" class="date-label">Data</label>
+                                <span class="form-border"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" id="time" name="time" required>
+                                <label for="time" class="time-label">Ora</label>
+                                <span class="form-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">1 Persona</option>
+                                <option value="2">2 Persone</option>
+                                <option value="3">3 Persone</option>
+                                <option value="4">4 Persone</option>
+                                <option value="5">5 Persone</option>
+                                <option value="6">6 Persone</option>
+                                <option value="more">Più di 6 Persone</option>
+                            </select>
+                            <label for="guests">Numero di Ospiti</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="3"></textarea>
+                            <label for="message">Note Speciali</label>
+                            <span class="form-border"></span>
+                        </div>
+                        <button type="submit" class="btn-accent">Prenota Ora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="contact" class="map-section">
+        <div class="map-container">
+            <div class="map-overlay"></div>
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.1825842789243!2d11.253326776537515!3d43.77050577109642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5403bfe22ff5%3A0x5591438487aaf1f5!2sVia%20Dante%20Alighieri%2C%2050122%20Firenze%20FI%2C%20Italia!5e0!3m2!1sit!2sit!4v1710718490123!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Cucina<span class="accent">Creativa</span></span>
+                    <p>Tradizione Italiana con un Tocco Moderno</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Chi Siamo</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Galleria</a></li>
+                        <li><a href="#contact">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Via Dante Alighieri 42, 50122 Firenze, Italia</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+39 055 987 6543">+39 055 987 6543</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@cucinacreativa.it">info@cucinacreativa.it</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Seguici</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form id="newsletterForm">
+                            <div class="newsletter-form">
+                                <input type="email" placeholder="La tua email" required>
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Cucina Creativa. Tutti i diritti riservati.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                    <a href="terms.html">Termini e Condizioni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
